@@ -143,7 +143,8 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Lesson 1 homework: Chat Completions + tool calling")
     parser.add_argument(
         "--prompt",
-        default="What is 17.5 multiplied by 4, then add 2?",
+        default="What is 17.5 multiplied by 4?",
+        #default="What is 17.5 multiplied by 4, then add 2?",
         help="Question for the assistant.",
     )
     parser.add_argument(

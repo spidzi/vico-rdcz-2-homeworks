@@ -51,8 +51,9 @@ OPENAI_API_KEY=your_key_here
 uv run main.py
 ```
 
-Custom prompt:
+Custom prompt (only works for `main.py`):
 
 ```bash
+uv run main.py --prompt "Multiply 8 by 9"
 uv run main.py --prompt "Multiply 8 by 9 and then add 12"
 ```

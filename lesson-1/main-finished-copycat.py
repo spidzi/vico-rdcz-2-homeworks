@@ -75,7 +75,7 @@ available_functions = {
 
 
 # Function to process messages and handle function calls
-def get_completion_from_messages(messages, model="gpt-4o"):
+def get_completion_from_messages(messages, model="gpt-4o-mini"):
     response = client.chat.completions.create(
         model=model,
         messages=messages,
@@ -142,7 +142,8 @@ def get_completion_from_messages(messages, model="gpt-4o"):
 # Example usage
 messages = [
     {"role": "system", "content": "You are a helpful AI assistant."},
-    {"role": "user", "content": "Multiply 7 by 8 and then add 10."},
+    {"role": "user", "content": "Multiply 7 by 8."},
+    #{"role": "user", "content": "Multiply 7 by 8 and then add 10."},
 ]
 
 response = get_completion_from_messages(messages)
