@@ -1,0 +1,20 @@
+# Environment and secrets
+.env
+**/.env
+
+# Python virtual environments
+.venv/
+**/.venv/
+venv/
+**/venv/
+
+# Python cache/artifacts
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+
+# Local OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
